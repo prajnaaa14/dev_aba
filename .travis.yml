@@ -8,3 +8,12 @@ install:
 
 script:
   - npm run build
+
+addons:
+  sonarcloud:
+    organization: "your-org"
+    token:
+      secure: "YOUR_TOKEN"
+
+after_success:
+  - sonar-scanner
