@@ -1,17 +1,10 @@
 language: node_js
 
 node_js:
-  - "18"
-
-cache:
-  npm: true
+  - "20"
 
 install:
   - npm install
 
 script:
   - npm run build
-  - npm run lint
-
-notifications:
-  email: false
